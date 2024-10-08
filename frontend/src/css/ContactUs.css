@@ -1,0 +1,157 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact Us Container */
+.contact-us {
+    width: 90%;
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 40px auto;
+}
+
+/* Header */
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h1 {
+    font-size: 36px;
+}
+
+.contact-header p {
+    color: #555;
+}
+
+/* Introduction Section */
+.contact-introduction {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-introduction h2 {
+    font-size: 28px;
+}
+
+.contact-introduction p {
+    color: #555;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    margin-bottom: 40px;
+}
+
+.contact-form-container {
+    background-color: #fff; /* White background for form */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside form container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px; /* Space between inputs */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border */
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #fdbe33; /* Button color */
+    border-radius: 5px;
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.contact-form button:hover {
+    background-color: #e0a800; /* Darker button on hover */
+}
+
+/* Phone Section */
+.contact-phone-section {
+    background-color: #f4f4f4; /* Light background for phone section */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Chat Section */
+.contact-chat-section {
+    text-align: center;
+}
+
+.chat-button {
+    background-color: #fdbe33; /* Chat button color */
+    color: #030f27; /* Button text color */
+}
+
+/* Company Info Section */
+.company-info-section,
+.about-company {
+   background-color:#fff ; 
+   padding :20 px ; 
+   border-radius :8 px ; 
+   box-shadow :0 px 4 px rgba(0 ,0 ,0 ,0.1) ; 
+}
+
+/* Footer Styles */
+.contact-footer {
+   display:flex ; 
+   justify-content :space-between ; 
+   flex-wrap :wrap ; 
+   background-color :#030f27 ; 
+   color:white ; 
+   padding :40 px ; 
+   border-radius :8 px ; 
+}
+
+.footer-info,
+.footer-navigation,
+.footer-quick-links,
+.footer-social {
+   flex-basis :22% ; 
+   margin-right:auto ; 
+   margin-left:auto ; 
+}
+
+.footer-navigation ul,
+.footer-quick-links ul {
+   list-style-type:none ; 
+   padding :0 ; 
+}
+
+.footer-navigation li,
+.footer-quick-links li {
+   margin-bottom :10 px ; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .contact-us {
+       width: 95%; /* Adjust width for smaller screens */
+   }
+
+   .contact-footer {
+       flex-direction: column; /* Stack footer items on smaller screens */
+       align-items:center ; 
+       text-align:center ;
+   }
+
+   .footer-info,
+   .footer-navigation,
+   .footer-quick-links,
+   .footer-social {
+       flex-basis: auto; /* Allow items to take full width on small screens */
+       margin-bottom :20 px ; 
+   }
+
+}

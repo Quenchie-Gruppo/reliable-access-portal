@@ -1,0 +1,146 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background */
+}
+
+.home-container {
+    max-width: 100%; /* Allow full width for better responsiveness */
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Hero Section */
+.home-hero {
+    background-color: #030f27;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home-hero p {
+    font-size: 20px;
+}
+
+/* Features Section */
+.features-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Add some space between the grid items */
+}
+
+.feature {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(25% - 20px); /* Make sure the width fits within the grid */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature-icon {
+    font-size: 50px;
+    color: #fdbe33;
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: #030f27; /* Dark background */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center align text */
+    padding: 60px 20px; /* Increased padding for better spacing */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly; /* Even spacing between stats */
+    flex-wrap: wrap;
+    gap: 30px; /* Increased gap for better separation */
+}
+
+.stat {
+    flex: 1; /* Allow each stat to grow equally */
+    max-width: 300px; /* Set a max width for each stat box */
+    padding: 20px; /* Padding inside each stat box */
+    background-color: #1a1a1a; /* Slightly lighter background for stat boxes */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.stat:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+.stat-icon {
+    font-size: 60px; /* Increased icon size for better visibility */
+    color: #fdbe33; /* Icon color */
+}
+
+.stat h3 {
+    margin: 10px 0; /* Margin around heading for spacing */
+}
+
+.stat p {
+    margin: 0; /* Remove default margin for paragraph */
+}
+/* Call-to-Action */
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.cta-button {
+    background-color: #fdbe33;
+    color: #030f27;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-grid, .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature, .stat {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .feature, .stat {
+        width: 45%; /* Slight adjustment for tablets and smaller desktops */
+    }
+}

@@ -1,0 +1,216 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about-hero {
+    background-color: #030f27;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px; /* Increased padding for better visibility */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 22px; /* Slightly larger font size */
+}
+
+/* Image Slider */
+.image-slider {
+    margin: 20px auto; /* Center the slider */
+    max-width: 1200px; /* Set a max width for larger screens */
+}
+
+.slider-item {
+    position: relative; /* Positioning for overlay if needed */
+}
+
+.slider-image {
+    width: 100%; /* Full width for responsive design */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 600px; /* Set a max height to prevent stretching */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Vision & Mission Section */
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.vision, .mission {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+/* Services Section */
+.services {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.feature {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 22%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow */
+    margin: 10px; /* Added margin for spacing */
+}
+
+.icon {
+    color: #030f27;
+    margin-bottom: 10px;
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: #030f27;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.stat {
+    width: 45%;
+}
+
+
+/* Expertise Section */
+.expertise {
+    background-color: #f4f4f4; /* Light background for contrast */
+    padding: 50px 20px; /* Padding for spacing */
+    text-align: center; /* Center align text */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.expertise h2 {
+    font-size: 36px; /* Larger heading for emphasis */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.expertise p {
+    font-size: 18px; /* Slightly larger font for description */
+    margin-bottom: 30px; /* Space below paragraph */
+}
+
+/* Expertise Grid */
+.expertise-grid {
+    display: flex;
+    justify-content: space-around; /* Even spacing between items */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.expertise-item {
+    background-color: #030f27; /* Dark background for items */
+    color: #fdbe33; /* Text color for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(22% - 20px); /* Responsive width with margin consideration */
+    margin-bottom: 20px; /* Space below each item */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.expertise-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .expertise-grid {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center align items vertically */
+    }
+ 
+    .expertise-item {
+        width: 80%; /* Full width for mobile view */
+    }
+ }
+
+/* CTA Buttons */
+.cta-button {
+    background-color: #fdbe33;
+    color: #030f27;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #e0a800;
+}
+
+/* Team Section */
+.team {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 22%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+/* Awards and Customers */
+.awards, .customers, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vision-mission, .features-grid, .stats, .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vision, .mission, .feature, .stat, .team-member {
+        width: 80%; /* Adjust width for smaller screens */
+        margin-bottom: 20px;
+    }
+}

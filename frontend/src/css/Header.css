@@ -1,0 +1,63 @@
+/* Header.css or add to your App.css */
+
+header {
+    position: relative;
+}
+
+.menu-icon {
+    display: none; /* Hide menu icon by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff; /* Change this color as needed */
+    margin: 4px;
+    transition: 0.3s;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between; /* Aligns items in the navigation bar */
+    align-items: center; /* Centers items vertically */
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links.open {
+    display: flex; /* Show links when open */
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex; /* Show menu icon on smaller screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Positioning them absolutely */
+        background-color: #030f27; /* Background color for dropdown */
+        width: 100%; /* Full width */
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        z-index: 1000; /* Ensure it appears above other elements */
+    }
+
+    .nav-links.open {
+        display: flex; /* Show links when open */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Add spacing between links */
+        text-align: center; /* Center align the links */
+    }
+
+    .bar.open {
+        background-color: #fdbe33; /* Change color when open */
+    }
+}

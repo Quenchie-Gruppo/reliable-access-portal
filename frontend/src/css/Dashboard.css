@@ -1,0 +1,139 @@
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #030f27;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s; /* Smooth transition for width */
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+.sidebar nav ul li:hover {
+    background-color: #1a3b8a; 
+}
+
+.sidebar nav ul li svg {
+    margin-right: 10px;
+}
+
+.dashboard-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.dashboard-content h1 {
+    color: #030f27;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.analysis {
+    margin-top: 30px;
+}
+
+.analysis h2 {
+    color: #030f27;
+    margin-bottom: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center; /* Align icon with text */
+}
+
+.analysis-charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart {
+    width: 45%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; 
+    color: #999; 
+}
+
+/* Responsive Layout for smaller screens */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px; 
+        position: relative; /* Ensure the sidebar is relative to the viewport */
+    }
+
+    .analysis-charts {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .chart {
+        width: 100%;
+    }
+}
+
+/* Additional styles for better aesthetics */
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s; /* Add shadow transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #007bff; 
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #030f27;
+}
+
+.card p {
+    color: #555; 
+}
